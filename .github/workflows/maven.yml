@@ -16,7 +16,7 @@ jobs:
     - name: Build with Maven
       run: mvn clean install package
     - name: deploy tomcat
-      run: curl -v -u ${{ secrets.TOMCAT_USER_NAME }}:${{ secrets.TOMCAT_PASS }} -T /home/runner/work/deploy-war-to-tomcat-githubaction/deploy-war-to-tomcat-githubaction/target/spring3-mvc-maven-xml-hello-world-3.0-SNAPSHOT.war 'http://43.204.38.31:8080/manager/text/deploy?path=/myweb_dev_action&update=true'
+      run: curl -v -u ${{ secrets.TOMCAT_USER_NAME }}:${{ secrets.TOMCAT_PASS }} -T /home/runner/work/deploy-war-to-tomcat-githubaction/deploy-war-to-tomcat-githubaction/target/spring3-mvc-maven-xml-hello-world-3.0-SNAPSHOT.war 'http://43.204.38.31:8080
 
 
     
